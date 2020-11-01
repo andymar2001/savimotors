@@ -1,0 +1,11 @@
+.services-layout {
+  &__container {
+    background-image: url("../assets/img/icono-servicios.png");
+    background-repeat: no-repeat;
+    background-size: 14rem;
+    background-position: 12.5rem 6rem;
+  }
+  &__data {
+    background-color: $primary-color;
+  }
+}

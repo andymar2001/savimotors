@@ -1,0 +1,11 @@
+.img-car {
+  border: 0.1rem solid #ccc;
+  padding: 3rem;
+  background-color: $white;
+  & img {
+    width: 100%;
+  }
+  &:nth-child(odd) {
+    border-right: none;
+  }
+}

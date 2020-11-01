@@ -1,0 +1,25 @@
+.warranty-layout {
+  background-color: $primary-color;
+  &__img {
+    &:first-child {
+      margin-top: 5rem;
+    }
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+  &__data {
+    color: $white;
+  }
+  &__title {
+    margin: 0;
+    margin-top: 1.5rem;
+    display: inline-block;
+    border-bottom: 0.2rem solid $white;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+}

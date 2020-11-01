@@ -13,6 +13,7 @@ block banner
         img(src=`${img}banner3.jpg`, alt="banner savimotors")
 block main
   main.main
+    //- Seccion cotizar
     section.quote-layout
       .quote-layout__container.container
         picture.quote-layout__img
@@ -33,6 +34,8 @@ block main
             .form-quote__button
               button.button-icon(type="submit") <i class="fas fa-calculator"></i>
                 | COTIZAR
+
+    // Seccion citas
     section.appointment-layout
       .appointment-layout__container.container
         h2.appointment-layout__title Solicita tu cita de mantenimiento ó reparación
@@ -40,14 +43,68 @@ block main
           input.input(type="text" placeholder="Ingresa tu Placa")
           button.button-icon(type="submit") <i class="fas fa-headset"></i>
             | Solicitar Cita
+
+    // Seccion servicios
+    section.services-layout
+      .services-layout__container.container.section
+        h2.title NUESTROS
+          span SERVICIOS
+        .services-layout__slider
+          .services-layout__item
+            .services-layout__data
+              h2.services-layout__title MANTENIMIENTO
+              .accordion
+              p.accordion__text Esta sección contiene las condiciones de garantía de Ford, por ende, es de vital importancia que nuestros clientes tengan conocimiento de estas. El incumplimiento 
+              button.accordion__button <i class="fas fa-plus"></i>
+    // Seccion garantia
+    section.warranty-layout
+      .warranty-layout__container.container
+        figure.warranty-layout__img
+          img(src=`${img}ford.png`, alt="")
+        figure.warranty-layout__img
+          img(src=`${img}garantia.png`, alt="")
+        .warranty-layout__data
+          h2.warranty-layout__title GARANTÍA
+          .accordion
+            p.accordion__text Esta sección contiene las condiciones de garantía de Ford, por ende, es de vital importancia que nuestros clientes tengan conocimiento de estas. El incumplimiento 
+            button.accordion__button <i class="fas fa-plus"></i>
+          .accordion
+            p.accordion__text CONDICIONES GENERALES
+            button.accordion__button <i class="fas fa-plus"></i>
+          .accordion
+            p.accordion__text COMPONENTES DE GARANTÍA LIMITADA
+            button.accordion__button <i class="fas fa-plus"></i>
+          .accordion
+            p.accordion__text CAUSALES DE CADUCIDAD
+            button.accordion__button <i class="fas fa-plus"></i>
+
+    // Seccion campañas
+    section.bells-layout
+      .bells-layout__container.container.section
+        h2.title.title--center CAMPAÑAS
+        .bells-layout__slider
+          .element-slider
+            figure.img-car
+              img(src=`${img}carro-equipamiento1.jpg`, alt="carro")
+          .element-slider
+            figure.img-car
+              img(src=`${img}carro-equipamiento2.jpg`, alt="carro")
+          .element-slider
+            figure.img-car
+              img(src=`${img}carro-equipamiento1.jpg`, alt="carro")
+          .element-slider
+            figure.img-car
+              img(src=`${img}carro-equipamiento2.jpg`, alt="carro")
+          
+    // Seccion equipamiento
     section.equipment-layout
       .equipment-layout__container.container.section
         h2.title EQUIPAMIENTO
           span Y/O TUNING
         .equipment-layout__grid
-          picture.equipment-layout__img
+          figure.img-car
             img(src=`${img}carro-equipamiento1.jpg`, alt="carro")
-          picture.equipment-layout__img
+          figure.img-car
             img(src=`${img}carro-equipamiento2.jpg`, alt="carro")
         .center
           a.button-icon(href="#") <i class="fas fa-car"></i>

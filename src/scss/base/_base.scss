@@ -44,7 +44,7 @@ ul {
   font-family: $main-font;
 }
 
-li{
+li {
   font-family: inherit;
 }
 
@@ -94,7 +94,21 @@ button {
   color: $primary-color;
   font-weight: 700;
   font-size: 2.5rem;
-  & span{
+  &--center {
+    text-align: center;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 12%;
+      height: 0.3rem;
+      background-color: $primary-color;
+    }
+  }
+  & span {
     color: $secondary-color;
   }
 }

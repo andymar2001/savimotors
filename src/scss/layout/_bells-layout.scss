@@ -1,0 +1,16 @@
+.bells-layout {
+  &__slider {
+    margin-top: 5rem;
+    & .slick-dots {
+      bottom: -5rem;
+    }
+    & .slick-dots li button:before {
+      font-size: 2rem;
+      color: $primary-color;
+      opacity: 1;
+    }
+    & .slick-dots li.slick-active button:before {
+      color: $secondary-color;
+    }
+  }
+}
