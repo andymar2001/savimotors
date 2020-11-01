@@ -1,0 +1,54 @@
+extends ../templates/template
+block title-description
+  title Savimotors - Inicio
+  meta(name="description" content="Descripccion")
+block banner
+  .banner
+    .banner__slider
+      picture.banner__img
+        img(src=`${img}banner.jpg`, alt="banner savimotors")
+      picture.banner__img
+        img(src=`${img}banner2.jpg`, alt="banner savimotors")
+      picture.banner__img
+        img(src=`${img}banner3.jpg`, alt="banner savimotors")
+block main
+  main.main
+    section.quote-layout
+      .quote-layout__container.container
+        picture.quote-layout__img
+          img(src=`${img}carro-cotiza.png`, alt="vehiculo cotizar")
+        .quote-layout__data
+          h2.quote-layout__title COTIZA TU VEHÍCULO
+          form#form-quote.form-quote(action="")
+            label.label(for="style-quote") ESCOGE TU ESTILO
+            select#style-quote.input(name="style")
+              option(value="suv-s" selected) SUV'S
+              option(value="suv-s2") SUV'S 2
+              option(value="suv-s3") SUV'S 3
+            label.label(for="model-quote") ESCOGE TU MODELO
+            select#model-quote.input(name="model")
+              option(value="ecosport" selected) ECOSPORT
+              option(value="ecosport2") ECOSPORT 2
+              option(value="ecosport3") ECOSPORT 3
+            .form-quote__button
+              button.button-icon(type="submit") <i class="fas fa-calculator"></i>
+                | COTIZAR
+    section.appointment-layout
+      .appointment-layout__container.container
+        h2.appointment-layout__title Solicita tu cita de mantenimiento ó reparación
+        form#form-appointment.form-appointment(action="")
+          input.input(type="text" placeholder="Ingresa tu Placa")
+          button.button-icon(type="submit") <i class="fas fa-headset"></i>
+            | Solicitar Cita
+    section.equipment-layout
+      .equipment-layout__container.container.section
+        h2.title EQUIPAMIENTO
+          span Y/O TUNING
+        .equipment-layout__grid
+          picture.equipment-layout__img
+            img(src=`${img}carro-equipamiento1.jpg`, alt="carro")
+          picture.equipment-layout__img
+            img(src=`${img}carro-equipamiento2.jpg`, alt="carro")
+        .center
+          a.button-icon(href="#") <i class="fas fa-car"></i>
+            | VER TODOS LOS MODELOS

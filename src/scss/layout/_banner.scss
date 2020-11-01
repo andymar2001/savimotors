@@ -1,0 +1,52 @@
+$size-arrow: 7rem;
+$separation: 2rem;
+.banner {
+  position: relative;
+  &--page {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+  }
+  &__title {
+    font-family: $main-title;
+    font-weight: 400;
+    margin: 0;
+    font-size: 5rem;
+    color: $white;
+  }
+  & .slick-prev,
+  & .slick-next {
+    z-index: 20;
+    width: $size-arrow;
+    height: $size-arrow;
+    &::before {
+      font-size: $size-arrow;
+    }
+    @include mobile {
+      width: 5rem;
+      height: 5rem;
+      &::before {
+        font-size: 5rem;
+      }
+    }
+  }
+  & .slick-prev {
+    left: $separation;
+    @include mobile {
+      left: 0.5rem;
+    }
+  }
+  & .slick-next {
+    right: $separation;
+    @include mobile {
+      right: 0.5rem;
+    }
+  }
+  &__img {
+    & img {
+      width: 100%;
+    }
+  }
+}

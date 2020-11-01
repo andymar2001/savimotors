@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $main-font;
+}
+
+div {
+  font-family: $main-font;
+}
+
+p {
+  font-family: $main-font;
+}
+
+ul {
+  font-family: $main-font;
+}
+
+li{
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+span {
+  font-family: inherit;
+  color: inherit;
+}
+button {
+  border-radius: 0;
+}
+
+//MINIFRAMEWORK
+.container {
+  max-width: 117rem;
+  margin-left: auto;
+  margin-right: auto;
+  @include tablet {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  color: $primary-color;
+  font-weight: 700;
+  font-size: 2.5rem;
+  & span{
+    color: $secondary-color;
+  }
+}
+.subtitle {
+}
+.label {
+  font-weight: 700;
+  color: rgb(87, 87, 87);
+  display: inline-block;
+  margin-bottom: 1rem;
+}

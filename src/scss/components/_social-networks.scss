@@ -1,0 +1,13 @@
+.social-networks{
+  display: flex;
+  &__item{
+    font-size: 4rem;
+    margin-left: 1rem;
+    &:first-child{
+      margin-left: 0;
+    }
+    & svg{
+      @include bg-color(transparent, $secondary-color);
+    }
+  }
+}

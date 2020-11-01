@@ -1,0 +1,155 @@
+include ../config/config 
+include ../includes/mixins 
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    //COLOR-ANDROID
+    <meta name="theme-color" content="#EBEBEB">
+    //FAVICON
+    link(rel="shortcut icon", href=`${favicon}`)
+    //OPEN GRAPH
+    meta(property="og:title" content=`${tituloRedes}`)
+    meta(property="og:type" content="website")
+    meta(property="og:url" content=`${urlWeb}`)
+    meta(property="og:image" content=`${imgWeb}`)
+    meta(property="og:description" content=`${descripccionRedes}`)
+    //SCHEMA MARKUP FOR GOOGLE
+    meta(itemprop="name" content=`${tituloRedes}`)
+    meta(itemprop="description" content=`${descripccionRedes}`)
+    meta(itemprop="image" content=`${imgWeb}`)
+    //TWITTER CARD DATA
+    meta(name="twitter:card" content=`${twitterCard}`)
+    meta(name="twitter:site" content=`${urlWeb}`)
+    meta(name="twitter:title" content=`${tituloRedes}`)
+    meta(name="twitter:description" content=`${descripccionRedes}`)
+    meta(name="twitter:image:src" content=`${imgWeb}`)
+    //FONTAWESOME
+    link(rel="stylesheet", href="assets/fontawesome/css/all.min.css")
+    script(src="assets/fontawesome/js/all.min.js")
+    //SLICK
+    link(rel="stylesheet", href="assets/slick/slick/slick.css")
+    link(rel="stylesheet", href="assets/slick/slick/slick-theme.css")
+    //LIGHTBOX
+    link(rel="stylesheet", href="assets/lightbox/dist/css/lightbox.min.css")
+    //MODAL VIDEO
+    link(rel="stylesheet", href="assets/modal-video/css/modal-video.min.css")
+    //STYLE BASE
+    link(rel="stylesheet", href="css/styles.css")
+    block title-description
+  body
+    header.header
+      .header__container.container
+        a(href="#").header__logo
+          figure
+            img(src=`${img}logo.png`, alt="logo savimotors")
+        .header__data
+          .header__top
+            figure.header__brand 
+              img(src=`${img}ford.png`, alt="logo ford")
+            ul.header__options
+              a(href="#").option-item VEHICULOS
+                <i class="fas fa-car"></i>
+              a(href="#").option-item VEHICULOS
+                <i class="fas fa-car"></i>
+              a(href="#").option-item VEHICULOS
+                <i class="fas fa-car"></i>
+          nav.header__nav
+            ul.main-menu
+              li.main-menu__item: a(href="#") INICIO
+              li.main-menu__item: a(href="#") NOSOTROS
+              li.main-menu__item: a(href="#") REPUESTOS
+              li.main-menu__item: a(href="#") PROMOCIONES
+              li.main-menu__item: a(href="#") NOTICIAS
+              li.main-menu__item: a(href="#") CONTÁCTENOS
+    .addresses
+      .addresses__container.container
+        p <i class="fas fa-map-marked-alt"></i>
+          | Av. América Norte 1522 Urb. Las Quintanas, Trujillo
+        p <i class="fas fa-map-marked-alt"></i>
+          | C.C. Mall Plaza, costado Motor Plaza, Trujillo
+        p <i class="fas fa-map-marked-alt"></i>
+          | Av. Vía de Evitamiento Norte 310, Cajamarca.
+    block banner
+    block main
+    footer.footer
+      .footer__top
+        .footer__top--container.container
+          figure.footer__logo
+            img(src=`${img}logo-white.png`, alt="logo blanco savimotors")
+          .footer__grid
+            .footer-item
+              p.footer-item__title <i class="fas fa-car"></i>
+                |VEHÍCULOS
+              ul.footer-item__list
+                li: a(href="#") SUV´s
+                li: a(href="#") Pick-Up's
+                li: a(href="#") Sport
+            .footer-item
+              p.footer-item__title <i class="fas fa-car"></i>
+                |SERVICIOS
+              ul.footer-item__list
+                li: a(href="#") Mantenimiento
+                li: a(href="#") Planchado y Pintura
+                li: a(href="#") Repuestos y Accesorios
+            .footer-item
+              p.footer-item__title <i class="fas fa-car"></i>
+                |VISÍTANOS
+              ul.footer-item__list
+                li: a(href="#") Av. América Norte 1522 Urb. Las Quintanas, Trujillo
+                li: a(href="#") C.C. Mall Plaza, costado Motor Plaza, Trujillo
+                li: a(href="#") Av. Vía de Evitamiento Norte 310, Cajamarca.
+            .footer-item
+              p.footer-item__title <i class="fas fa-car"></i>
+                |NOSOTROS
+              ul.footer-item__list
+                li: a(href="#") Conócenos
+                li: a(href="#") Misión y Visión
+                li: a(href="#") Locales
+            .footer-item
+              p.footer-item__title <i class="fas fa-car"></i>
+                |HERRAMIENTAS
+              ul.footer-item__list
+                li: a(href="#") Cotizar
+                li: a(href="#") Reserva tu Cita
+                li: a(href="#") Llámenos
+            .footer-item
+              p.footer-item__title <i class="fas fa-car"></i>
+                |NOTICIAS Y PROMOCIONES
+              ul.footer-item__list
+                li: a(href="#") Noticias
+                li: a(href="#") Promociones
+            .footer-item
+              p.footer-item__title <i class="fas fa-car"></i>
+                |SÍGUENOS EN REDES
+              ul.social-networks
+                a(href="#" target="_blank").social-networks__item
+                  <i class="fab fa-facebook-square"></i>
+                a(href="#").social-networks__item
+                  <i class="fab fa-instagram-square"></i>
+                a(href="#").social-networks__item
+                  <i class="fab fa-youtube"></i>
+      .footer__credits
+        .footer__credits--container.container
+          .footer__information
+            p.footer__text
+              span * Tipo de cambio referencial 3.55
+              span ** Imágenes referenciales y especificaciones según Ford Perú.
+            p.footer__text Copyright © 2020 SAVI MOTORS. Reservados todos los derechos.
+          .footer__evolucion
+            span Desarrollado por
+            a(href="https://evolucionmedia.pe/" target="_blank")
+              img(src=`${img}logo-evolucion.png`, alt="")
+    //JQUERY
+    script(src="js/jquery.js")
+    //SLICK
+    script(src="assets/slick/slick/slick.min.js")
+    //VIDEO MODAL
+    script(src="assets/modal-video/js/jquery-modal-video.min.js")
+    //LIGHTBOX
+    script(src="assets/lightbox/dist/js/lightbox.min.js")
+    //MY SCRIPTS
+    script(src="js/scripts-min.js")
+
+

@@ -1,0 +1,17 @@
+@font-face {
+  src: url("../assets/fonts/coolvetica-rg.ttf");
+  font-family: "coolvetica-rg";
+}
+@font-face {
+  src: url("../assets/fonts/Lato-Regular.ttf");
+  font-family: "lato";
+}
+
+:root {
+  --main-title: "coolvetica-rg", sans-serif;
+  --main-font: "lato", sans-serif;
+}
+
+$main-title: var(--main-title);
+$main-font: var(--main-font);
+$second-font: var(--second-font);

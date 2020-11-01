@@ -1,0 +1,32 @@
+.equipment-layout {
+  &__container {
+    background-image: url("../assets/img/icono-equipamiento.png");
+    background-repeat: no-repeat;
+    background-size: 14rem;
+    background-position: 15.5rem 4rem;
+  }
+  &__title {
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__img {
+    border: 0.1rem solid #ccc;
+    padding: 3rem;
+    background-color: $white;
+    & img {
+      width: 100%;
+    }
+    &:first-child {
+      border-right: none;
+    }
+  }
+  & .center {
+    margin-top: 3rem;
+    & a{
+      background-color: $primary-color;
+      @include bg-color($secondary-color)
+    }
+  }
+}

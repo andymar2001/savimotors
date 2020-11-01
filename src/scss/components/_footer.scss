@@ -1,0 +1,60 @@
+.footer {
+  color: $white;
+  &__top {
+    background-color: $primary-color;
+    background-image: url("../assets/img/footer-marca.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 29%;
+    &--container {
+      padding-top: 4rem;
+      padding-bottom: 6rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 4rem;
+      background-image: url("../assets/img/footer-flecha.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    & .footer-item {
+      &:nth-child(3) {
+        grid-column: 3/5;
+      }
+    }
+  }
+  &__credits {
+    background-color: $tertiary-color;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .footer__credits--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__text {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    &:first-child {
+      margin-top: 0;
+    }
+    & span {
+      margin-right: 1rem;
+    }
+  }
+  &__evolucion {
+    display: flex;
+    align-items: center;
+    & span {
+      margin-right: 1rem;
+    }
+  }
+}

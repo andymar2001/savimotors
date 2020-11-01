@@ -1,0 +1,32 @@
+.appointment-layout{
+  background-color: $secondary-color;
+  position: relative;
+  &::after{
+    content: '';
+    background-color: $secondary-color;
+    position: absolute;
+    bottom: -5rem;
+    left: 50%;
+    width: 10rem;
+    height: 5rem;
+    transform: translateX(-50%);
+    clip-path: polygon(100% 0, 0 0, 50% 30%);
+  }
+  &__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0 3rem;
+    background-image: url("../assets/img/fondo-cita.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+  &__title{
+    margin: 0;
+    color: $white;
+    text-align: center;
+    max-width: 50rem;
+    font-size: 3.5rem;
+  }
+}

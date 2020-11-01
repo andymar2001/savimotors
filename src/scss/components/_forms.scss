@@ -1,0 +1,28 @@
+.form-quote {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 2rem;
+  & label {
+    color: $white;
+  }
+  & select {
+    width: 25rem;
+  }
+  &__button {
+    grid-column: 2/3;
+  }
+}
+.form-appointment {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  & > * {
+    border-radius: 0;
+  }
+  & button{
+    background-color: $primary-color;
+    @include bg-color($tertiary-color)
+  }
+}
