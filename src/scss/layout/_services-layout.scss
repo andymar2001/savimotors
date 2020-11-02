@@ -5,7 +5,43 @@
     background-size: 14rem;
     background-position: 12.5rem 6rem;
   }
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   &__data {
     background-color: $primary-color;
+    position: relative;
+    color: $white;
+    padding-left: 10rem;
+    padding-top: 4rem;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 8rem;
+      background-color: $white;
+      clip-path: polygon(0 0, 0% 100%, 100% 0);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -8rem;
+      height: 100%;
+      width: 8rem;
+      background-color: $primary-color;
+      clip-path: polygon(0 0, 0% 100%, 100% 0);
+    }
+  }
+  &__title {
+    display: inline-block;
+    border-bottom: 0.2rem solid $white;
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
   }
 }
