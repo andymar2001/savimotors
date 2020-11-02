@@ -5,8 +5,25 @@
     background-size: 14rem;
     background-position: 12.5rem 6rem;
   }
+  &__preslider {
+    position: relative;
+  }
+  &__left,
+  &__right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    cursor: pointer;
+  }
+  &__left {
+    left: -7rem;
+  }
+  &__right {
+    right: -7rem;
+  }
   &__item {
-    display: grid;
+    display: grid !important;
     grid-template-columns: repeat(2, 1fr);
   }
   &__data {

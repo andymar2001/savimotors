@@ -49,15 +49,28 @@ block main
       .services-layout__container.container.section
         h2.title NUESTROS
           span SERVICIOS
-        .services-layout__slider
-          .services-layout__item
-            .services-layout__data
-              h2.services-layout__title MANTENIMIENTO
-              .accordion
-                p.accordion__text El mantenimiento constante de tu vehículo permite que se conserve en buenas condiciones de funcionamiento y seguridad,
-                button.accordion__button <i class="fas fa-plus"></i>
-            picture.services-layout__img
-              img(src=`${img}servicios.jpg`, alt="imagen")
+        .services-layout__preslider
+          figure.services-layout__left
+            img(src=`${img}flecha-izquierda.png`, alt="flecha izquierda")
+          .services-layout__slider
+            .services-layout__item
+              .services-layout__data
+                h2.services-layout__title MANTENIMIENTO
+                .accordion
+                  p.accordion__text El mantenimiento constante de tu vehículo permite que se conserve en buenas condiciones de funcionamiento y seguridad,
+                  button.accordion__button <i class="fas fa-plus"></i>
+              picture.services-layout__img
+                img(src=`${img}servicios.jpg`, alt="imagen")
+            .services-layout__item
+              .services-layout__data
+                h2.services-layout__title MANTENIMIENTO
+                .accordion
+                  p.accordion__text El mantenimiento constante de tu vehículo permite que se conserve en buenas condiciones de funcionamiento y seguridad,
+                  button.accordion__button <i class="fas fa-plus"></i>
+              picture.services-layout__img
+                img(src=`${img}servicios.jpg`, alt="imagen")
+          figure.services-layout__right
+            img(src=`${img}flecha-derecha.png`, alt="flecha derecha")
               
     // Seccion garantia
     section.warranty-layout
