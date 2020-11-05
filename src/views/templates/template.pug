@@ -49,12 +49,48 @@ html(lang="es")
             figure.header__brand 
               img(src=`${img}ford.png`, alt="logo ford")
             ul.header__options
-              a(href="#").option-item VEHICULOS
-                <i class="fas fa-car"></i>
-              a(href="#").option-item VEHICULOS
-                <i class="fas fa-car"></i>
-              a(href="#").option-item VEHICULOS
-                <i class="fas fa-car"></i>
+              .option-category
+                a(href="#")#modal-vehiculo.option-category__item VEHICULOS
+                  <i class="fas fa-car"></i>
+                #modal-category.modal-category
+                  ul#tabs-category.modal-category__tabs
+                    li.modal-category__tab.modal-category__tab--active TODOS
+                    li.modal-category__tab SUV'S
+                    li.modal-category__tab SPORT
+                    li.modal-category__tab PICK-UP'S
+                  .modal-category__grid.modal-category__grid--active
+                    +card-modal
+                    +card-modal
+                    +card-modal
+                    +card-modal
+                    +card-modal
+                    +card-modal
+                    +card-modal
+                    +card-modal
+                  .modal-category__grid
+                    +card-modal
+                    +card-modal
+                    +card-modal
+                    +card-modal
+                    +card-modal
+                    +card-modal
+                    +card-modal
+                    +card-modal
+                  .modal-category__grid
+                    +card-modal
+                    +card-modal
+                    +card-modal
+                    +card-modal
+                    +card-modal
+                    +card-modal
+                    +card-modal
+                    +card-modal
+              .option-category
+                a(href="#").option-category__item VEHICULOS
+                  <i class="fas fa-car"></i>
+              .option-category
+                a(href="#").option-category__item VEHICULOS
+                  <i class="fas fa-car"></i>
           nav.header__nav
             ul.main-menu
               li.main-menu__item: a(href="#") INICIO
@@ -63,6 +99,8 @@ html(lang="es")
               li.main-menu__item: a(href="#") PROMOCIONES
               li.main-menu__item: a(href="#") NOTICIAS
               li.main-menu__item: a(href="#") CONTÁCTENOS
+            form.form-search(action="")
+              .form-search__button <i class="fas fa-search"></i>
     .addresses
       .addresses__container.container
         p <i class="fas fa-map-marked-alt"></i>
@@ -141,6 +179,41 @@ html(lang="es")
             span Desarrollado por
             a(href="https://evolucionmedia.pe/" target="_blank")
               img(src=`${img}logo-evolucion.png`, alt="")
+    .options-fixed
+      .options-fixed__item
+        a(href="#").options-fixed__icon
+          img(src=`${img}/icons/calculadora.png`, alt="")
+        p.options-fixed__text SIMULADOR DE CUOTAS
+      .options-fixed__item
+        a(href="#").options-fixed__icon
+          img(src=`${img}/icons/calendario.png`, alt="")
+        p.options-fixed__text SIMULADOR DE CUOTAS
+      .options-fixed__item
+        a(href="#").options-fixed__icon  
+          img(src=`${img}/icons/asistente.png`, alt="")
+        p.options-fixed__text SIMULADOR DE CUOTAS
+      .options-fixed__item
+        a(href="#").options-fixed__icon
+          img(src=`${img}/icons/facebook.png`, alt="")
+        p.options-fixed__text SIMULADOR DE CUOTAS
+      .options-fixed__item
+        a(href="#").options-fixed__icon
+          img(src=`${img}/icons/instagram.png`, alt="")
+        p.options-fixed__text SIMULADOR DE CUOTAS
+      .options-fixed__item
+        a(href="#").options-fixed__icon
+          img(src=`${img}/icons/whatsapp.png`, alt="")
+        p.options-fixed__text SIMULADOR DE CUOTAS
+      a(href="#").options-fixed__item
+        .options-fixed__icon
+          img(src=`${img}/icons/youtube.png`, alt="")
+        p.options-fixed__text SIMULADOR DE CUOTAS
+    .shadow
+    .social-fixed
+      a(href="#").social-fixed__icon
+        img(src=`${img}messenger.png`, alt="")
+      a(href="#").social-fixed__icon
+        img(src=`${img}whatsapp.png`, alt="")
     //JQUERY
     script(src="js/jquery.js")
     //SLICK

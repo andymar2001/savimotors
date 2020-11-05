@@ -1,10 +1,11 @@
 .header {
   position: sticky;
-  z-index: 15;
+  z-index: 25;
   top: 0;
   left: 0;
   background-color: $white;
   box-shadow: 0 0 1rem 0 rgb(131, 131, 131);
+  
   &__container {
     display: flex;
     justify-content: space-between;
@@ -15,7 +16,16 @@
     justify-content: flex-end;
     align-items: center;
   }
+  &__data {
+    display: flex;
+    flex-direction: column;
+  }
   &__options {
+    display: flex;
+    align-items: center;
+  }
+  &__nav {
+    padding-bottom: 0.5rem;
     display: flex;
     align-items: center;
   }

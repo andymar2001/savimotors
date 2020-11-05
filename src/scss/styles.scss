@@ -11,7 +11,8 @@
 @import "base/base";
 //Components
 @import "components/header";
-@import "components/option-item";
+@import "components/option-category";
+@import "components/modal-category";
 @import "components/main-menu.scss";
 @import "components/addresses";
 @import "components/cards";
@@ -24,6 +25,9 @@
 @import "components/footer";
 @import "components/footer-item";
 @import "components/social-networks";
+@import "components/options-fixed";
+@import "components/social-fixed";
+@import "components/shadow";
 //Layouts
 @import "layout/banner";
 @import "layout/quote-layout";

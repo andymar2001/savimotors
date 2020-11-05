@@ -1,3 +1,17 @@
+.form-search {
+  &__button {
+    background-color: $secondary-color;
+    color: $white;
+    width: 6rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    cursor: pointer;
+  }
+}
+
 .form-quote {
   margin-top: 4rem;
   display: grid;
@@ -21,8 +35,8 @@
   & > * {
     border-radius: 0;
   }
-  & button{
+  & button {
     background-color: $primary-color;
-    @include bg-color($tertiary-color)
+    @include bg-color($tertiary-color);
   }
 }

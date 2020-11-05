@@ -1,0 +1,13 @@
+.social-fixed {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  z-index: 20;
+  &__icon {
+    display: block;
+    margin-top: 2rem;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.options-fixed {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    &:nth-child(odd) {
+      .options-fixed__icon,
+      .options-fixed__text {
+        background-color: $primary-color;
+      }
+    }
+    &:nth-child(even) {
+      .options-fixed__icon,
+      .options-fixed__text {
+        background-color: $secondary-color;
+      }
+    }
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    &:hover ~ .options-fixed__text {
+      transform: translateX(100%);
+    }
+  }
+  &__text {
+    margin: 0;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    padding-left: 0;
+    font-weight: 700;
+    font-size: 1.3rem;
+    max-width: 9rem;
+    z-index: -1;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    left: -50%;
+    transform: translateX(0%);
+    position: absolute;
+  }
+}
